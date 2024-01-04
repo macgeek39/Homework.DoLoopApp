@@ -6,8 +6,25 @@
  * types "exit".
  */
 
-// Ask the User for their name
-// If name is tim
-// Print "Welcome professor"
-// Or else "Welcome Student"
+string firstName;
+string lowerName;
+
 // Until user type "exit" to exit the app
+do
+{
+    // Ask the User for their name
+    Console.WriteLine("Enter your first name: ");
+    firstName = Console.ReadLine();
+    lowerName = firstName.ToLower();
+    // If name is tim
+    if (lowerName == "tim")
+    {
+        // Print "Welcome professor"
+        Console.WriteLine("Welcome Professor");
+    }
+    else
+    {
+        // Or else "Welcome Student"
+        Console.WriteLine("Welcome Student");
+    } 
+} while (lowerName != "exit");
